@@ -114,10 +114,15 @@ body {
 
 .left-pane {
     width: 70%;
-    padding: 2rem;
+    /* padding: 2rem; */
     /* border: 0.5rem solid black; */
     border-radius: 1.0rem;
 }
+
+.center-text {
+    /* text-align: center; */
+    justify-content: center;
+  }  
 
 .right-pane {
     background-color: #ffffff;
@@ -126,6 +131,15 @@ body {
     border: 0.1rem solid black;
     border-radius: 2.5rem;
 }
+
+.welcome {
+    font-size: 4rem;
+}
+
+.company {
+    font-size: 4.5rem;
+}
+
 
 
 
@@ -150,7 +164,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
     /* background-color: #f2f2f2; */
     /* border-radius: 10px; */
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -167,7 +181,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.social {
+/* .social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +204,7 @@ body {
 .social i {
     color: white;
     margin-right: 0.5rem;
-}
+} */
 
 span {
     font-size: 1.2rem;
@@ -235,7 +249,7 @@ button {
         font-size: 2rem;
     }
 
-    .social-container {
+    /* .social-container {
         margin-bottom: 0.5rem;
     }
 
@@ -243,7 +257,7 @@ button {
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1.2rem;
-    }
+    } */
 
     span {
         font-size: 1rem;
@@ -283,6 +297,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     /* padding: 2rem; */
     margin-top: 8em;
     margin-bottom: 5rem;
@@ -292,9 +307,29 @@ button {
     /* border: 0.1rem solid black; */
 }
 
+.welcome {
+    font-size: 4rem;
+
+}
+
+.about-us-and-right-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* padding: 2rem; */
+    /* border: 0.5rem solid black; */
+    /* border-radius: 2.5rem; */
+    /* border: 0.1rem solid black; */
+
+}
 .about-us {
+    /* font-size: 4rem; */
     width: 50%;
     padding: 2rem;
+    /* display: flex;
+    flex-direction: row; */
     left: 0;
     /* border: 0.5rem solid black; */
     border-radius: 2.5rem;
@@ -372,6 +407,7 @@ button {
     /* border: 0.1rem solid black; */
 }
 
+
 .providers-section {
     width: 100%;
     /* padding: 2rem; */
@@ -419,9 +455,9 @@ button {
 .provider-button {
     font-family: 'Poppins', sans-serif;
     margin-top: 2rem;
-    width: 30%;
+    width: 10%;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     padding: 0.3125rem 0.75rem; /* 10px / 16px = 0.625rem, 24px / 16px = 1.5rem */
     font-size: 1.125rem; /* 18px / 16px = 1.125rem */
     color: rgb(255, 255, 255);
@@ -462,6 +498,10 @@ button {
     scale: 1;
     border-radius: 1.5rem;
   }
+
+  .welcome-provider {
+    font-size: 4rem;
+  }
   
   
   
@@ -496,6 +536,10 @@ button {
     /* Added property */
 }
 
+.our-team-intro {
+    text-align: center;
+    font-size: 4rem;
+}
 
 .our-team {
     display: flex;
