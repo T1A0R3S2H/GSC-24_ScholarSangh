@@ -13,15 +13,45 @@
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
-                margin-bottom: 50px;
+                margin-bottom: 3.125rem;
+            }
+
+            .section1 {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 15rem;
+            }
+
+            .right-pane {
+                width: 75%;
+            }
+
+            .left-pane {
+                width: 75%;
             }
 
             .welcome {
-                font-size: 1rem;
+                font-size: 2.5rem;
             }
 
             .company {
-                font-size: 1.5rem;
+                font-size: 2.25rem;
+            }
+
+            .welcome-provider {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+            .our-team-intro {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+            .provider-button {
+                font-size: 0.4rem;
+                text-align: center;
+                position: absolute;
             }
         }
     </style>
@@ -31,7 +61,7 @@
     <nav class="navbar">
         <a href="#section2" id="aboutUsLink">About Us</a>
         <a href="#section3" id="providersLink">Providers' Section</a>
-        <a href="#section4"id="teamLink">Our Team</a>
+        <a href="#section4" id="teamLink">Our Team</a>
         <a href="seeker-sign-up.html">Register (Students)</a>
     </nav>
 
@@ -40,9 +70,9 @@
         <div class="section1">
 
             <div class="left-pane">
-                <h1 class="welcome" style="font-size: 4rem;">Welcome to</h1>
-                <h1 class="company" style="font-size: 5rem; color: red;">ScholarSangh</h1>
-                <h1 style="color: #000000; font-size: 2rem;"><span class="auto-type"></span></h1>
+                <h1 class="welcome">Welcome to</h1>
+                <h1 class="company" style="color: red;">ScholarSangh</h1>
+                <h1 class="center-text" style="color: #000000;"><span class="auto-type"></span></h1>
             </div>
 
 
@@ -52,18 +82,10 @@
                 <div class="form-container sign-in-container">
                     <form action="#">
                         <h1>Sign in</h1>
-<!--                         <div class="social-container">
-                            <link rel="stylesheet"
-                                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span style="font-weight: bold; font-size: 18px;">or use your account</span> -->
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
                         <a href="#">Forgot your password?</a>
-                        <button>Sign In</button>
+                        <a href="demo-country.html"><button class="seeker-sign-in">Sign In</button></a>
                     </form>
                 </div>
             </div>
@@ -71,18 +93,22 @@
 
 
         <div class="section2" id="section2">
-            <div class="about-us" id="about-us">
-                <h1 class="welcome" style="font-size: 4rem;">About Us</h1>
-                <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perferendis
-                    consectetur quo, nobis unde explicabo maxime dignissimos accusantium eum similique reprehenderit,
-                    molestiae, minima possimus expedita quibusdam itaque error voluptates laboriosam! Lorem ipsum dolor
-                    sit, amet consectetur adipisicing elit. Sint perferendis consectetur quo, nobis unde explicabo
-                    maxime dignissimos accusantium eum similique reprehenderit, molestiae, minima possimus expedita
-                    quibusdam itaque error voluptates laboriosam!</p>
-            </div>
+            <h1 class="welcome">About Us</h1>
+            <div class="about-us-and-right-image">
 
-            <div class="right-image">
-                <img src="assets/image-right.jpg" alt="">
+
+
+                <div class="about-us" id="about-us">
+
+                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perferendis
+                        consectetur quo, nobis unde explicabo maxime dignissimos accusantium eum similique
+                        reprehenderit,
+                        molestiae, minima possimus expedita quibusdam.</p>
+                </div>
+
+                <div class="right-image">
+                    <img src="assets/image-right.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -98,7 +124,7 @@
 
 
         <div class="section3" id="section3">
-            <h1 class="welcome-provider" style="font-size: 4rem;">Providers' Section</h1>
+            <h1 class="welcome-provider">Providers' Section</h1>
             <div class="providers-section">
                 <!-- <h1 class="welcome" style="font-size: 4rem;">Our Providers</h1>
                 <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perferendis consectetur quo, nobis unde explicabo maxime dignissimos accusantium eum similique reprehenderit, molestiae, minima possimus expedita quibusdam itaque error voluptates laboriosam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perferendis consectetur quo, nobis unde explicabo maxime dignissimos accusantium eum similique reprehenderit, molestiae, minima possimus expedita quibusdam itaque error voluptates laboriosam!</p> -->
@@ -108,9 +134,9 @@
                     <div class="right-providers-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Suscipit aspernatur necessitatibus molestias dolorum corrupti! Libero doloribus explicabo quod
                         debitis odio ullam eveniet distinctio nostrum quas. Libero aspernatur eveniet aut omnis.</div>
-                   <a href="provider-sign-up-in.html"> <button class="provider-button">
-                        Provide
-                    </button></a>
+                    <a href="provider-sign-up-in.html"> <button class="provider-button">
+                            Provide
+                        </button></a>
                 </div>
 
             </div>
@@ -127,7 +153,7 @@
 
 
         <div class="section4" id="section4">
-            <h1 class="our-team-intro" style="font-size: 4rem;">Our Team</h1>
+            <h1 class="our-team-intro">Our Team</h1>
             <div class="our-team">
 
                 <div class="box">
@@ -199,7 +225,53 @@
 
         <div class="section-5">
             <h1 class="our-partners" style="font-size: 4rem;"></h1>
-            
+            <!-- <div class="our-partners"> -->
+            <!-- <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                        </div>
+                    </div>
+                </div> -->
 
 
 
@@ -225,7 +297,7 @@
 
     <div class="section6">
         <div class="contact-us">
-            
+
         </div>
     </div>
 
